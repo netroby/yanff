@@ -23,7 +23,7 @@
                     "image-name": "yanff-test1",
                     "app-type": "TestAppGo",
                     "exec-cmd": [
-                        "./part1", "-number=10000", "-config=config.json", "-target=hostname2"
+                        "./part1", "-number=10000", "-config=config.json", "-target=hostname2", "-speed=1000"
                     ]
                 },
                 {
@@ -46,7 +46,7 @@
                     "image-name": "yanff-test-merge",
                     "app-type": "TestAppGo",
                     "exec-cmd": [
-                        "./test-merge-part1", "-number=10000", "-config=config.json", "-target=hostname2"
+                        "./test-merge-part1", "-number=10000", "-config=config.json", "-target=hostname2", "-speed=1000"
                     ]
                 },
                 {
@@ -69,7 +69,7 @@
                     "image-name": "yanff-test-split",
                     "app-type": "TestAppGo",
                     "exec-cmd": [
-                        "./test-split-part1", "-number=10000", "-config=config.json", "-target=hostname2"
+                        "./test-split-part1", "-number=10000", "-config=config.json", "-target=hostname2", "-speed=1000"
                     ]
                 },
                 {
@@ -92,7 +92,7 @@
                     "image-name": "yanff-test-separate",
                     "app-type": "TestAppGo",
                     "exec-cmd": [
-                        "./test-separate-part1", "-number=10000", "-config=config.json", "-target=hostname2"
+                        "./test-separate-part1", "-number=10000", "-config=config.json", "-target=hostname2", "-speed=1000"
                     ]
                 },
                 {
@@ -115,7 +115,7 @@
                     "image-name": "yanff-test-partition",
                     "app-type": "TestAppGo",
                     "exec-cmd": [
-                        "./test-partition-part1", "-number=10000", "-config=config.json", "-target=hostname2"
+                        "./test-partition-part1", "-number=10000", "-config=config.json", "-target=hostname2", "-speed=1000"
                     ]
                 },
                 {

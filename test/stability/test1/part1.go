@@ -30,7 +30,7 @@ var (
 	testDoneEvent   *sync.Cond
 	passed          int32 = 1
 	progStart       time.Time
-	speed           uint64
+	speed           uint64 = 1000000
 
 	// T second timeout is used to let generator reach required speed
 	// During timeout packets are skipped and not counted
@@ -53,7 +53,7 @@ var (
 func main() {
 	flag.UintVar(&outport, "outport", 0, "port for sender")
 	flag.UintVar(&inport, "inport", 1, "port for receiver")
-	flag.Uint64Var(&speed, "speed", 1000, "speed of generator")
+	flag.Uint64Var(&speed, "speed", speed, "speed of generator")
 	flag.Uint64Var(&totalPackets, "number", 100000000, "total number of packets to receive by test")
 	configFile := flag.String("config", "", "Specify json config file name (mandatory for VM)")
 	target := flag.String("target", "", "Target host name from config file (mandatory for VM)")

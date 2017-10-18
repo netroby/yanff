@@ -43,7 +43,7 @@ var (
 	totalPackets uint64
 	// Payload is 16 byte md5 hash sum of headers
 	payloadSize uint   = 16
-	speed       uint64 = 1000
+	speed       uint64 = 1000000
 	passedLimit uint64 = 85
 
 	recvCount1 uint64
